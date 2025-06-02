@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadoop Cluster Manager | Production-Ready Big Data Solutions</title>
+    <meta name="description" content="Complete Apache Hadoop 3.4.1 cluster installation and management toolkit with automated scripts, comprehensive documentation, and production-ready configuration templates.">
+    <meta name="keywords" content="hadoop, big data, cluster management, distributed systems, apache hadoop, devops, automation">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-server"></i>
+                <span>Hadoop Cluster Manager</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#documentation" class="nav-link">Docs</a></li>
+                <li><a href="#scripts" class="nav-link">Scripts</a></li>
+                <li><a href="#getting-started" class="nav-link">Get Started</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Production-Ready<br>
+                    <span class="gradient-text">Hadoop Cluster Management</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Complete Apache Hadoop 3.4.1 toolkit with automated scripts, comprehensive documentation, 
+                    and enterprise-grade configuration templates for seamless big data deployments.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#getting-started" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Get Started
+                    </a>
+                    <a href="https://github.com/pramithajayasooriya/hadoop-cluster-manager" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Management Scripts</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Lines of Documentation</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Production Ready</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <div class="terminal-title">hadoop-control.sh</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">./hadoop-control.sh start</span>
+                        </div>
+                        <div class="terminal-output">
+                            <div class="output-line success">🔧 Starting Hadoop Cluster...</div>
+                            <div class="output-line success">✅ HDFS services started successfully</div>
+                            <div class="output-line success">✅ YARN services started successfully</div>
+                            <div class="output-line success">✅ Cluster Status: FULLY OPERATIONAL (5/5 services running)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-subtitle">Everything you need for enterprise Hadoop deployments</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Automated Installation</h3>
+                    <p>Complete automated setup with intelligent configuration detection and validation for both single-node and multi-node clusters.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-time Monitoring</h3>
+                    <p>Advanced cluster monitoring with colored output, service health checks, and web interface accessibility validation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Node Management</h3>
+                    <p>Safe node addition, removal, and decommissioning with automatic backup and rollback capabilities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Production Security</h3>
+                    <p>Enterprise-grade security configurations with SSH key management and proper permission handling.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Comprehensive Docs</h3>
+                    <p>Detailed installation guides, troubleshooting documentation, and best practices for production deployments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Legal Compliance</h3>
+                    <p>Complete Apache 2.0 + MIT dual licensing with export control compliance and proper attribution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts Section -->
+    <section id="scripts" class="scripts">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Management Scripts</h2>
+                <p class="section-subtitle">Production-ready automation tools for your Hadoop cluster</p>
+            </div>
+            <div class="scripts-grid">
+                <div class="script-card">
+                    <div class="script-header">
+                        <i class="fas fa-play-circle"></i>
+                        <h3>hadoop-control.sh</h3>
+                    </div>
+                    <p class="script-description">Easy cluster control with start, stop, restart, and status commands. Includes intelligent service detection and colored output.</p>
+                    <div class="script-features">
+                        <span class="feature-tag">Auto-detection</span>
+                        <span class="feature-tag">Error handling</span>
+                        <span class="feature-tag">Colored output</span>
+                    </div>
+                    <div class="script-example">
+                        <code>./hadoop-control.sh start</code>
+                    </div>
+                </div>
+                <div class="script-card">
+                    <div class="script-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>cluster-status.sh</h3>
+                    </div>
+                    <p class="script-description">Real-time cluster monitoring with service status, node counts, and health indicators. Perfect for system administration.</p>
+                    <div class="script-features">
+                        <span class="feature-tag">Real-time</span>
+                        <span class="feature-tag">Health checks</span>
+                        <span class="feature-tag">Web interfaces</span>
+                    </div>
+                    <div class="script-example">
+                        <code>./cluster-status.sh</code>
+                    </div>
+                </div>
+                <div class="script-card">
+                    <div class="script-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>manage-cluster-nodes.sh</h3>
+                    </div>
+                    <p class="script-description">Complete node lifecycle management with safe decommissioning, automatic backups, and cluster conversion capabilities.</p>
+                    <div class="script-features">
+                        <span class="feature-tag">Safe operations</span>
+                        <span class="feature-tag">Auto backup</span>
+                        <span class="feature-tag">Multi-node</span>
+                    </div>
+                    <div class="script-example">
+                        <code>./manage-cluster-nodes.sh add worker-node-1</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="documentation" class="documentation">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Documentation</h2>
+                <p class="section-subtitle">Comprehensive guides for every aspect of your Hadoop deployment</p>
+            </div>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Installation Guide</h3>
+                    <p>Complete step-by-step installation instructions for single-node and multi-node Hadoop clusters.</p>
+                    <a href="README.md" class="doc-link">Read Documentation <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Quick Reference</h3>
+                    <p>Fast access guide for cluster management commands and common operational workflows.</p>
+                    <a href="CLUSTER-MANAGEMENT.md" class="doc-link">View Reference <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Legal Compliance</h3>
+                    <p>Apache 2.0 licensing compliance guide and export control information for enterprise use.</p>
+                    <a href="LICENSING-GUIDE.md" class="doc-link">License Info <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="getting-started" class="getting-started">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get Started in Minutes</h2>
+                <p class="section-subtitle">Follow these simple steps to deploy your Hadoop cluster</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Clone Repository</h3>
+                        <p>Download the complete toolkit from GitHub</p>
+                        <div class="code-block">
+                            <code>git clone https://github.com/pramithajayasooriya/hadoop-cluster-manager.git</code>
+                            <button class="copy-btn" onclick="copyToClipboard(this)">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Install Hadoop</h3>
+                        <p>Follow the comprehensive installation guide</p>
+                        <div class="code-block">
+                            <code>cd hadoop-cluster-manager && cat README.md</code>
+                            <button class="copy-btn" onclick="copyToClipboard(this)">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Start Cluster</h3>
+                        <p>Use the convenient control script to start your cluster</p>
+                        <div class="code-block">
+                            <code>./hadoop-control.sh start</code>
+                            <button class="copy-btn" onclick="copyToClipboard(this)">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Built With</h2>
+                <p class="section-subtitle">Production-tested technologies and best practices</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-linux"></i>
+                    <span>Apache Hadoop 3.4.1</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-terminal"></i>
+                    <span>Bash/Zsh Scripts</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-server"></i>
+                    <span>HDFS & YARN</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>MapReduce</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-docker"></i>
+                    <span>Container Ready</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-cloud"></i>
+                    <span>Multi-Platform</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hadoop Cluster Manager</h3>
+                    <p>Production-ready big data cluster management made simple.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/pramithajayasooriya/hadoop-cluster-manager" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://hadoop.apache.org/" target="_blank">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Documentation</h4>
+                    <ul>
+                        <li><a href="README.md">Installation Guide</a></li>
+                        <li><a href="CLUSTER-MANAGEMENT.md">Quick Reference</a></li>
+                        <li><a href="LICENSING-GUIDE.md">License Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Scripts</h4>
+                    <ul>
+                        <li><a href="#scripts">hadoop-control.sh</a></li>
+                        <li><a href="#scripts">cluster-status.sh</a></li>
+                        <li><a href="#scripts">manage-cluster-nodes.sh</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://hadoop.apache.org/docs/current/" target="_blank">Apache Hadoop Docs</a></li>
+                        <li><a href="https://hadoop.apache.org/releases.html" target="_blank">Release Notes</a></li>
+                        <li><a href="https://issues.apache.org/jira/projects/HADOOP" target="_blank">Issue Tracker</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pramitha Jayasooriya. Licensed under Apache 2.0 + MIT.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
