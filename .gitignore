@@ -49,5 +49,8 @@ target/
 # *.log
 # *.out
 
-hadoop
-LICENSE
+# Hadoop backups
+hadoop/backups
+
+# Exclude the entire Hadoop distribution (we only need our scripts and docs)
+hadoop/
