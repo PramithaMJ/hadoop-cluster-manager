@@ -1,0 +1,52 @@
+# Hadoop specific archives
+hadoop-3.4.1-src.tar.gz
+hadoop-3.4.1.tar.gz
+hadoop-3.4.1-src
+
+# Archive files
+*.tar.gz
+*.tgz
+*.tar
+*.gz
+*.zip
+*.7z
+*.rar
+
+# Hadoop backup files
+backups/*.tar.gz
+
+# Hadoop runtime and data files (should not be in Git)
+hadoop/data/
+hadoop/tmp/
+hadoop/logs/
+hadoop/pids/
+
+# Temporary files
+*.tmp
+*.temp
+*.log.bak
+*.xml.bak
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Java specific
+*.class
+*.jar
+target/
+
+# Hadoop log files (optional - uncomment if you don't want to track logs)
+# logs/
+# *.log
+# *.out
+
+hadoop

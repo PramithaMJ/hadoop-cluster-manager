@@ -1,0 +1,29 @@
+This repository contains multiple components with different licenses:
+
+## Apache Hadoop 3.4.1
+
+**Path**: `hadoop/`
+**License**: Apache License 2.0
+**Copyright**: © 2006 and onwards The Apache Software Foundation
+**License File**: hadoop/LICENSE.txt
+**Notice File**: hadoop/NOTICE.txt
+
+Apache Hadoop is distributed under the Apache License 2.0.
+You may obtain a copy of the License at: http://www.apache.org/licenses/LICENSE-2.0
+
+## Custom Scripts and Documentation
+
+**Files**: 
+- cluster-status.sh
+- manage-cluster-nodes.sh
+- README.md
+- CLUSTER-MANAGEMENT.md
+- LICENSING-GUIDE.md
+
+## Export Control Notice
+
+This distribution includes Apache Hadoop which contains cryptographic software.
+Please check your country's laws, regulations and policies concerning the import,
+possession, or use, and re-export of encryption software before using this software.
+
+For more information, see hadoop/NOTICE.txt
