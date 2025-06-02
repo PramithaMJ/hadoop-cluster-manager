@@ -343,9 +343,37 @@ start-all.sh
 
 ## Starting and Stopping Hadoop Cluster
 
-### 🚀 Starting Hadoop Services
+### 🎯 **Quick Start (Recommended)**
 
-#### Method 1: Start All Services at Once (Recommended for beginners)
+Use the convenient control script included in this repository:
+
+```bash
+# Start the cluster
+./hadoop-control.sh start
+
+# Stop the cluster  
+./hadoop-control.sh stop
+
+# Restart the cluster
+./hadoop-control.sh restart
+
+# Check cluster status
+./hadoop-control.sh status
+
+# Show help
+./hadoop-control.sh help
+```
+
+This script provides:
+- ✅ **Colored output** for easy reading
+- ✅ **Automatic error checking** and validation
+- ✅ **Smart service detection** - knows what's running
+- ✅ **Web interface links** when cluster is healthy
+- ✅ **Safe start/stop procedures** with proper sequencing
+
+### 🚀 Manual Service Management
+
+#### Method 1: Start All Services at Once
 
 ```bash
 # Start all Hadoop services
